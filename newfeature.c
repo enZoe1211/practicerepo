@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <unistd.h>
 
 void main()
 {
-// need to print current working dir.
-// please develop this fuction.
+char pwd[1024];
+getcwd(pwd, sizeof(pwd));
+printf("%s\n",pwd);
 }
